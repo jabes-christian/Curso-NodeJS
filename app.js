@@ -5,19 +5,19 @@ const express = require("express")
 const app = express()
 
 app.get("/", function(req, res){
-    res.send("Gerenciador Financeiro")
+    res.sendFile(__dirname + "/src/index.html")
 })
 
 app.get("/sobre-empresa", function(req, res){
-    res.send("Pagina sobre empresa")
+    res.sendFile(__dirname + "/src/sobre-empresa.html")
 })
 
 app.get("/blog", function(req, res){
-    res.send("Pagina do blog")
+    res.sendFile(__dirname + "/src/blog.html")
 })
 
 app.get("/contato", function(req, res){
-    res.send("Pagina de contato")
+    res.sendFile(__dirname + "/src/contato.html")
 })
 
 // localhost:3000
